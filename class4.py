@@ -1,4 +1,25 @@
 
+# def my_sale(*args):
+#     sale=0
+#     for i in args:
+#         sale=sale+i
+#     return sale
+
+# print ('Total sale : ', my_sale(10,5,5,50))   
+# print ('Total sale : ', my_sale(10,5,15))   
+# print ('Total sale : ', my_sale(15,2,3,25,14,1))
+
+def add(**kwargs):
+    sum=0
+    for key in kwargs:
+        sum=sum+kwargs[key]
+    return sum
+
+total=add(a=45,b=48)
+print(total)
+
+
+
 # def shop_total_sale(*args):
 #         print(type(args))
 #         sum = 0
@@ -11,12 +32,12 @@
 # print('Total Sale Amount : ', total_amount)
 
 
-def add(**kwargs):
-    print(type(kwargs))
-    sum = 0
-    for key in kwargs:
-        sum = sum + kwargs[key]
-    return sum
+# def add(**kwargs):
+#     print(type(kwargs))
+#     sum = 0
+#     for key in kwargs:
+#         sum = sum + kwargs[key]
+#     return sum
 
-total = add(a=54,b=67,c=23,d=46)
-print(total)
+# total = add(a=54,b=67,c=23,d=46)
+# print(total)
