@@ -9,14 +9,14 @@
 # print ('Total sale : ', my_sale(10,5,15))   
 # print ('Total sale : ', my_sale(15,2,3,25,14,1))
 
-def add(**kwargs):
-    sum=0
-    for key in kwargs:
-        sum=sum+kwargs[key]
-    return sum
+# def add(**kwargs):
+#     sum=0
+#     for key in kwargs:
+#         sum=sum+kwargs[key]
+#     return sum
 
-total=add(a=45,b=48)
-print(total)
+# total=add(a=45,b=48,c=23)
+# print(total)
 
 
 
@@ -41,3 +41,20 @@ print(total)
 
 # total = add(a=54,b=67,c=23,d=46)
 # print(total)
+
+x=input("Enter a value for x : ")
+y=input("Enter a value for y : ")
+
+z=input("Options are (+-*/ or x for exit) : ")
+while (z!=0):
+  if (z=='+'):
+    print(int(x)+int(y))
+  elif(z=='-'):
+    print(int(x)-int(y))
+  elif(z=='*'):
+    print(int(x)*int(y))
+  elif(z=='/'):
+    print(int(x)/int(y))
+  elif (z=='x'):
+    exit()
+  z=input("Options are (+-*/ or x for exit) : ")
