@@ -72,20 +72,39 @@
 #  exit()
 
 
-class xty:
+# class xty:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def add(self):
+#         return self.a+self.b
+#     def sub(self):
+#         return self.a-self.b
+#     def mul(self):
+#         return self.a*self.b
+# object=xty(20,10)
+# print(object.add())
+# print(object.sub())
+# print(object.mul())
+
+class XTV:
     def __init__(self,a,b):
         self.a=a
         self.b=b
+
     def add(self):
-        return self.a+self.b
+        return self.a+ self.b
     def sub(self):
-        return self.a-self.b
+        return self.a- self.b
     def mul(self):
-        return self.a*self.b
-object=xty(20,10)
-print(object.add())
-print(object.sub())
-print(object.mul())
+        return self.a* self.b
+    def div(self):
+        if self.b !=0:
+         return self.a/ self.b
+
+cal12 =XTV(5,6)
+print(cal12.add(),cal12.sub(),cal12.mul(),cal12.div())
+
 
 
 
